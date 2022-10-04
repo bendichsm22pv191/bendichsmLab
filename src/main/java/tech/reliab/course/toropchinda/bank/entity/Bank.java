@@ -1,25 +1,28 @@
 package src.main.java.tech.reliab.course.toropchinda.bank.entity;
 
+import java.util.Random;
+
 public class Bank {
-    private int id;
+    private Integer id;
     private String name;
-    private int countOffices;
-    private int countATM;
-    private int countEmployee;
-    private int countClients;
-    private int rateBank;
-    private int allMoney;
-    private int rentalPrice;
-    public Bank(int id, String name, int countOffices, int countATM, int countEmployee, int countClients, int rateBank, int allMoney, int rentalPrice) {
-        this.id = 0;
-        this.name = "Super Bank Ever";
-        this.allMoney = 1000000000;
-        this.countATM = 5000;
-        this.rentalPrice = 15;
-        this.countClients = 10000;
-        this.countEmployee = 500;
-        this.countOffices = 50;
-        this.rateBank = 20;
+    private Integer countOffices;
+    private Integer countATM;
+    private Integer countEmployee;
+    private Integer countClients;
+    private Integer rateBank;
+    private Integer allMoney;
+    private Integer rentalPrice;
+    public Bank(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+        Random rand = new Random();
+        this.allMoney = rand.nextInt(1000000) + 1;
+        this.countATM = 0;
+        this.countClients = 0;
+        this.countEmployee = 0;
+        this.countOffices = 0;
+        this.rateBank = rand.nextInt(100) + 1;
+        this.rentalPrice = rand.nextInt(20 - (int)(rateBank / 5.0));
     }
     protected Bank(Bank bank){
         setAllMoney(bank.getAllMoney());
@@ -33,7 +36,7 @@ public class Bank {
         setId(bank.getId());
     }
 
-    public void setId(int id){
+    public void setId(Integer id){
         this.id = id;
     }
 
@@ -41,35 +44,35 @@ public class Bank {
         this.name = name;
     }
 
-    public void setCountOffices(int countOffices){
+    public void setCountOffices(Integer countOffices){
         this.countOffices = countOffices;
     }
 
-    public void setRateBank(int rateBank){
+    public void setRateBank(Integer rateBank){
         this.rateBank = rateBank;
     }
 
-    public void setCountATM(int countATM){
+    public void setCountATM(Integer countATM){
         this.countATM = countATM;
     }
 
-    public void setCountEmployee(int countEmployee){
+    public void setCountEmployee(Integer countEmployee){
         this.countEmployee = countEmployee;
     }
 
-    public void setCountClients(int countClients){
+    public void setCountClients(Integer countClients){
         this.countClients = countClients;
     }
 
-    public void setAllMoney(int allMoney){
+    public void setAllMoney(Integer allMoney){
         this.allMoney = allMoney;
     }
 
-    public void setRentalPrice(int rentalPrice){
+    public void setRentalPrice(Integer rentalPrice){
         this.rentalPrice = rentalPrice;
     }
 
-    public int getId(){
+    public Integer getId(){
         return this.id;
     }
 
@@ -77,32 +80,56 @@ public class Bank {
         return this.name;
     }
 
-    public int getCountOffices(){
+    public Integer getCountOffices(){
         return this.countOffices;
     }
 
-    public int getRateBank(){
+    public Integer getRateBank(){
         return this.rateBank;
     }
 
-    public int getCountATM(){
+    public Integer getCountATM(){
         return this.countATM;
     }
 
-    public int getCountEmployee(){
+    public Integer getCountEmployee(){
         return this.countEmployee;
     }
 
-    public int getCountClients(){
+    public Integer getCountClients(){
         return this.countClients;
     }
 
-    public int getAllMoney(){
+    public Integer getAllMoney(){
         return this.allMoney;
     }
 
-    public int getRentalPrice(){
+    public Integer getRentalPrice(){
         return this.rentalPrice;
     }
 
+    public void deliteBank() {
+        this.id = null;
+        this.name = null;
+        this.allMoney = null;
+        this.countATM = null;
+        this.countClients = null;
+        this.countEmployee = null;
+        this.countOffices = null;
+        this.rateBank = null;
+        this.rentalPrice = null;
+    }
+    public void display(){
+        System.out.println("Bank");
+        System.out.println("id = " + Integer.toString(getId()));
+        System.out.println("name = " + getName());
+        System.out.println("allMoney = " + Integer.toString(getAllMoney()));
+        System.out.println("countATM = " + Integer.toString(getCountATM()));
+        System.out.println("countClients = " + Integer.toString(getCountClients()));
+        System.out.println("countEmployee = " + Integer.toString(getCountEmployee()));
+        System.out.println("countOffices = " + Integer.toString(getCountOffices()));
+        System.out.println("rateBank = " + Integer.toString(getRateBank()));
+        System.out.println("rentalPrice = " + Integer.toString(getRentalPrice()));
+        System.out.println("");
+    }
 }

@@ -1,31 +1,33 @@
 package src.main.java.tech.reliab.course.toropchinda.bank.entity;
 
-import javax.xml.crypto.Data;
-import java.util.Date;
+import src.main.java.tech.reliab.course.toropchinda.bank.entity.Data;
+
+import java.util.Random;
 
 public class Person {
-    private int id;
+    private Integer id;
     private String name;
     private String surname;
     private String patronymic;
-    private Date birthday;
+    private Data birthday;
     private String post;
-    private int salary;
-    public Person(int id, String name, String surname, String patronymic, Date birthday, String post, int salary){
-        this.id = 1;
-        this.name = "Иван";
-        this.surname = "Иванов";
-        this.patronymic = "Иванович";
-        this.birthday = new Date();
-        this.post = "безработный";
-        this.salary = 0;
+    private Integer salary;
+    public Person(Integer id, String name, String surname, String patronymic, Data birthday, String post){
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.patronymic = patronymic;
+        this.birthday = birthday;
+        this.post = post;
+        Random rand = new Random();
+        this.salary = rand.nextInt(10000) + 1;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(Data birthday) {
         this.birthday = birthday;
     }
 
@@ -41,7 +43,7 @@ public class Person {
         this.post = post;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(Integer salary) {
         this.salary = salary;
     }
 
@@ -49,15 +51,15 @@ public class Person {
         this.surname = surname;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public Date getBirthday() {
+    public Data getBirthday() {
         return birthday;
     }
 
-    public int getSalary() {
+    public Integer getSalary() {
         return salary;
     }
 
@@ -75,5 +77,27 @@ public class Person {
 
     public String getSurname() {
         return surname;
+    }
+
+    public void delitePerson(){
+        this.id = null;
+        this.name = null;
+        this.surname = null;
+        this.patronymic = null;
+        this.birthday = null;
+        this.post = null;
+        this.salary = null;
+    }
+
+    public void display(){
+        System.out.println("Person");
+        System.out.println("id = " + Integer.toString(getId()));
+        System.out.println("name = " + getName());
+        System.out.println("surname = " + getSurname());
+        System.out.println("patronymic = " + getPatronymic());
+        System.out.println("birthday = " + getBirthday().Data());
+        System.out.println("post = " + getPost());
+        System.out.println("salary = " + Integer.toString(getSalary()));
+        System.out.println("");
     }
 }

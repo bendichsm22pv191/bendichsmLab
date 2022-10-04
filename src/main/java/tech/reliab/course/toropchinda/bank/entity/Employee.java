@@ -4,23 +4,25 @@ import javax.xml.crypto.Data;
 import java.util.Date;
 
 public class Employee extends Person {
-//    private int id;
-//    private Date birthday;
-//    private String post;
-//    private short salary;
-
+    private Integer id;
     private Bank bank;
     private Boolean offlineWork;
     private BankOffice bankOffice;
     private Boolean creditAble;
 
-    public Employee(int id, String name, String surname, String patronymic, Date birthday, String post, int salary, Bank bank, BankOffice bankOffice) {
-        super(id, name, surname, patronymic, birthday, post, salary);
+    public Employee(Person person, Integer id, Bank bank, BankOffice bankOffice) {
+        super(person.getId(), person.getName(), person.getSurname(), person.getPatronymic(), person.getBirthday(), person.getPost());
+        this.id = id;
         this.bank = bank;
         this.bankOffice = bankOffice;
         this.creditAble = true;
         this.offlineWork = true;
     }
+    Person getPerson(){
+        return new Person(this.getId(), this.getName(), this.getSurname(), this.getPatronymic(),
+                this.getBirthday(), this.getPost());
+    }
+
 
     public void setBank(Bank bank) {
         this.bank = bank;
@@ -38,6 +40,10 @@ public class Employee extends Person {
         this.offlineWork = offlineWork;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Bank getBank() {
         return bank;
     }
@@ -52,5 +58,30 @@ public class Employee extends Person {
 
     public Boolean getOfflineWork() {
         return offlineWork;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+
+    public void deliteEmployee() {
+        super.delitePerson();
+        this.id = null;
+        this.bank = null;
+        this.bankOffice = null;
+        this.creditAble = null;
+        this.offlineWork = null;
+    }
+
+    public void display(){
+        System.out.println("Employee");
+        System.out.println("id = " + Integer.toString(getId()));
+        System.out.println("id bank = " + Integer.toString(getBank().getId()));
+        System.out.println("id bankOffice = " + Integer.toString(getBankOffice().getId()));
+        System.out.println("creditAble = " + Boolean.toString(getCreditAble()));
+        System.out.println("offlineWork = " + Boolean.toString(getOfflineWork()));
+        System.out.println("");
     }
 }

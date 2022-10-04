@@ -1,39 +1,48 @@
 package src.main.java.tech.reliab.course.toropchinda.bank.entity;
 
-import javax.xml.crypto.Data;
-import java.util.Date;
+import src.main.java.tech.reliab.course.toropchinda.bank.entity.Data;
+import java.io.DataOutput;
+
 
 public class CreditAccount extends User {
-    private int id;
-    private User userAccount;
+    private Integer id;
     private String bankName;
     private Data beginCredit;
     private Data endCredit;
-    private int countMonthCredit;
-    private int sumCredit;
-    private int monthPayment;
-    private short interestRate;
+    private Integer countMonthCredit;
+    private Integer sumCredit;
+    private Integer monthPayment;
+    private Integer interestRate;//% stavka
     private Employee employee;
-    private int score;
+    private PaymentAccount paymentAccount;
 
-    public CreditAccount(String bankName, Data beginCredit, Data endCredit, int countMonthCredit,
-    int sumCredit, int monthPayment, short interestRate, Employee employee, int score, User userAccount, int id){
-        super();
-        this.userAccount = userAccount;
+    public CreditAccount(User user, String bankName, Data beginCredit, Data endCredit, Integer sumCredit,
+                         Integer interestRate, Employee employee, PaymentAccount paymentAccount, Integer id){
+        super(user.getPerson(), user.getId());
         this.bankName = bankName;
         this.id = id;
         this.beginCredit = beginCredit;
-        this.countMonthCredit = countMonthCredit;
         this.employee = employee;
         this.endCredit = endCredit;
         this.sumCredit = sumCredit;
-        this.monthPayment = monthPayment;
         this.interestRate = interestRate;
-        this.score = score;
+        this.paymentAccount = paymentAccount;
+        this.countMonthCredit = findCountMonthCredit();
+        this.monthPayment = findMonthPayment();
     }
 
-    @Override
-    public void setInterestRate(short interestRate) {
+    protected Integer findCountMonthCredit(){
+        return (this.endCredit.getYear() - this.beginCredit.getYear()) * 12 +
+                this.beginCredit.getMonth() - this.endCredit.getMonth();
+
+    }
+
+    protected Integer findMonthPayment(){
+        return getSumCredit()/getCountMonthCredit();
+    }
+
+
+    public void setInterestRate(Integer interestRate) {
         this.interestRate = interestRate;
     }
 
@@ -45,7 +54,7 @@ public class CreditAccount extends User {
         this.beginCredit = beginCredit;
     }
 
-    public void setCountMonthCredit(int countMonthCredit) {
+    public void setCountMonthCredit(Integer countMonthCredit) {
         this.countMonthCredit = countMonthCredit;
     }
 
@@ -57,28 +66,24 @@ public class CreditAccount extends User {
         this.endCredit = endCredit;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public void setMonthPayment(int monthPayment) {
+    public void setMonthPayment(Integer monthPayment) {
         this.monthPayment = monthPayment;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setPaymentAccount(Integer score) {
+        this.paymentAccount = paymentAccount;
     }
 
-    public void setSumCredit(int sumCredit) {
+    public void setSumCredit(Integer sumCredit) {
         this.sumCredit = sumCredit;
     }
 
-    public void setUserAccount(User userAccount) {
-        this.userAccount = userAccount;
-    }
-
     @Override
-    public short getInterestRate() {
+    public Integer getInterestRate() {
         return interestRate;
     }
 
@@ -94,23 +99,23 @@ public class CreditAccount extends User {
         return employee;
     }
 
-    public int getCountMonthCredit() {
+    public Integer getCountMonthCredit() {
         return countMonthCredit;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public int getMonthPayment() {
+    public Integer getMonthPayment() {
         return monthPayment;
     }
 
-    public int getScore() {
-        return score;
+    public PaymentAccount getPaymentAccount() {
+        return paymentAccount;
     }
 
-    public int getSumCredit() {
+    public Integer getSumCredit() {
         return sumCredit;
     }
 
@@ -118,7 +123,32 @@ public class CreditAccount extends User {
         return bankName;
     }
 
-    public User getUserAccount() {
-        return userAccount;
+    public void deliteCreditAccount() {
+        super.deliteUser();
+        this.bankName = null;
+        this.id = null;
+        this.beginCredit = null;
+        this.countMonthCredit = null;
+        this.employee = null;
+        this.endCredit = null;
+        this.sumCredit = null;
+        this.monthPayment = null;
+        this.interestRate = null;
+        this.paymentAccount = null;
+    }
+
+    public void display(){
+        System.out.println("CreditAccount");
+        System.out.println("id = " + Integer.toString(getId()));
+        System.out.println("bankName = " + getBankName());
+        System.out.println("beginCredit = " + getBeginCredit().Data());
+        System.out.println("endCredit = " + getEndCredit().Data());
+        System.out.println("countMonthCredit = " + Integer.toString(getCountMonthCredit()));
+        System.out.println("id employee = " + Integer.toString(getEmployee().getId()));
+        System.out.println("sumCredit = " + Integer.toString(getSumCredit()));
+        System.out.println("monthPayment = " + Integer.toString(getMonthPayment()));
+        System.out.println("interestRate = " + Integer.toString(getInterestRate()));
+        System.out.println("id score = " + Integer.toString(getPaymentAccount().getId()));
+        System.out.println("");
     }
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="200bad95-7b19-4a7e-a2f3-87f6f86d2f28" name="Changes" comment="part1">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/toropchinda/bank/entity/Data.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/toropchinda/bank/service/PersonService.java" afterDir="false" />
@@ -65,8 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "File.Encoding"
+    "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
   <component name="RunManager">
@@ -104,7 +102,7 @@
       <workItem from="1664643514711" duration="2114000" />
       <workItem from="1664709361075" duration="1824000" />
       <workItem from="1664816750178" duration="598000" />
-      <workItem from="1664833221280" duration="20598000" />
+      <workItem from="1664833221280" duration="18918000" />
     </task>
     <task id="LOCAL-00001" summary="main plus">
       <created>1664278777070</created>
