@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="200bad95-7b19-4a7e-a2f3-87f6f86d2f28" name="Changes" comment="part2 preend">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/bendichsmLab.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/bendichsm.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/BankAtm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/BankOffice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/CreditAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/Data.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/PaymentAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/AtmService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/BankOfficeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/BankService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/CreditAccountService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/EmployeeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/PaymentAccountService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/AtmServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/BankOfficeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/BankServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/CreditAccountServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/EmployeeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/PaymentAccountServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/PersonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bendichsmLab/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/toropchinda/bank/service/AtmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/toropchinda/bank/service/AtmService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/AtmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/toropchinda/bank/service/impl/AtmServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="200bad95-7b19-4a7e-a2f3-87f6f86d2f28" name="Changes" comment="part3 comments plus lst chngs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +73,7 @@
       <workItem from="1664643514711" duration="2114000" />
       <workItem from="1664709361075" duration="1824000" />
       <workItem from="1664816750178" duration="598000" />
-      <workItem from="1664833221280" duration="22694000" />
+      <workItem from="1664833221280" duration="23639000" />
     </task>
     <task id="LOCAL-00001" summary="main plus">
       <created>1664278777070</created>
@@ -143,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664864076712</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="part3 comments plus lst chngs">
+      <created>1664866906699</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664866906699</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +132,7 @@
     <MESSAGE value="oops" />
     <MESSAGE value="part1" />
     <MESSAGE value="part2 preend" />
-    <option name="LAST_COMMIT_MESSAGE" value="part2 preend" />
+    <MESSAGE value="part3 comments plus lst chngs" />
+    <option name="LAST_COMMIT_MESSAGE" value="part3 comments plus lst chngs" />
   </component>
 </project>
