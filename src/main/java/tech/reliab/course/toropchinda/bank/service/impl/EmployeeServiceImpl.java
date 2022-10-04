@@ -5,6 +5,9 @@ import src.main.java.tech.reliab.course.toropchinda.bank.entity.Employee;
 import src.main.java.tech.reliab.course.toropchinda.bank.service.EmployeeService;
 
 public class EmployeeServiceImpl implements EmployeeService {
+    /**
+     * Изменение офиса и типа работы соответств у сотрудника банка
+     */
     @Override
     public void transferOffice(Employee employee, BankOffice bankOffice, Boolean offlineWork) {
         employee.setBankOffice(bankOffice);

@@ -7,6 +7,9 @@ import src.main.java.tech.reliab.course.toropchinda.bank.entity.Data;
 
 
 public class BankOfficeServiceImpl implements BankOfficeService {
+    /**
+     * Добавляет в офис банкоматы и возвр. true, если можно добавить иначе false
+     */
     @Override
     public Boolean plusBankOfficeATM(BankOffice bankOffice, Integer quantityATM) {
         if(bankOffice.getPutATMable()) {
@@ -15,7 +18,9 @@ public class BankOfficeServiceImpl implements BankOfficeService {
         }
         return false;
     }
-
+    /**
+     * Убирает из офиса банкоматы и возвр. true, если можно убрать иначе false
+     */
     @Override
     public Boolean minusBankOfficeATM(BankOffice bankOffice, Integer quantityATM) {
         if(bankOffice.getATMable) {

@@ -5,6 +5,9 @@ import src.main.java.tech.reliab.course.toropchinda.bank.service.UserService;
 
 public class UserServiceImpl implements UserService {
 
+    /**
+     * Смена работы клиента банка - его должности и з.п.
+     */
     @Override
     public void changeJob(User user, Integer salary, String post) {
         user.setSalary(salary);
