@@ -1,5 +1,6 @@
 package src.main.java.tech.reliab.course.bendichsm.bank.service.impl;
 
+import src.main.java.tech.reliab.course.bendichsm.bank.entity.Bank;
 import src.main.java.tech.reliab.course.bendichsm.bank.entity.BankAtm;
 import src.main.java.tech.reliab.course.bendichsm.bank.entity.PaymentAccount;
 import src.main.java.tech.reliab.course.bendichsm.bank.service.AtmService;
@@ -28,5 +29,23 @@ public class AtmServiceImpl implements AtmService {
             return true;
         }
         return false;
+    }
+    @Override
+    public void update(BankAtm bankAtmUse, BankAtm bankAtmAppdate){
+        bankAtmAppdate.setAddress(bankAtmUse.getAddress());
+        bankAtmAppdate.setBank(bankAtmUse.getBank());
+        bankAtmAppdate.setName(bankAtmUse.getName());
+        bankAtmAppdate.setId(bankAtmUse.getId());
+        bankAtmAppdate.setEmployeeATM(bankAtmUse.getEmployeeATM());
+        bankAtmAppdate.setStatus(bankAtmUse.getStatus());
+        bankAtmAppdate.setAllMoney(bankAtmUse.getAllMoney());
+        bankAtmAppdate.setATMServiceCost(bankAtmUse.getATMServiceCost());
+        bankAtmAppdate.setMoneyGetAble(bankAtmUse.getMoneyGetAble());
+        bankAtmAppdate.setMoneyPutAble(bankAtmUse.getMoneyPutAble());
+        bankAtmAppdate.setLocation(bankAtmUse.getLocation());
+    }
+    @Override
+    public void delite(BankAtm bankAtm){
+        bankAtm = null;
     }
 }

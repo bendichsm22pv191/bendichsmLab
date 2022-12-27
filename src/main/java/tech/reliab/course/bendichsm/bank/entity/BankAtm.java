@@ -30,20 +30,6 @@ public class BankAtm{
         this.allMoney = bank.getAllMoney()/(bank.getCountATM()+1);
     }
 
-    public void update(BankAtm bankAtm){
-        setAddress(bankAtm.getAddress());
-        setBank(bankAtm.getBank());
-        setName(bankAtm.getName());
-        setId(bankAtm.getId());
-        setEmployeeATM(bankAtm.getEmployeeATM());
-        setStatus(bankAtm.getStatus());
-        setAllMoney(bankAtm.getAllMoney());
-        setATMServiceCost(bankAtm.getATMServiceCost());
-        setMoneyGetAble(bankAtm.getMoneyGetAble());
-        setMoneyPutAble(bankAtm.getMoneyPutAble());
-        setLocation(bankAtm.getLocation());
-    }
-
     public void setMoneyPutAble(Boolean moneyPutAble) {
         isMoneyPutAble = moneyPutAble;
     }

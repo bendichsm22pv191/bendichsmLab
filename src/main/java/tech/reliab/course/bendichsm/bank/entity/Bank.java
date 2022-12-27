@@ -24,17 +24,6 @@ public class Bank {
         this.rateBank = rand.nextInt(100) + 1;
         this.rentalPrice = rand.nextInt(20 - (int)(rateBank / 5.0));
     }
-    public void update(Bank bank){
-        setAllMoney(bank.getAllMoney());
-        setCountATM(bank.getCountATM());
-        setCountClients(bank.getCountClients());
-        setCountEmployee(bank.getCountEmployee());
-        setRateBank(bank.getRateBank());
-        setCountOffices(bank.getCountOffices());
-        setName(bank.getName());
-        setRentalPrice(bank.getRentalPrice());
-        setId(bank.getId());
-    }
 
     public void setId(Integer id){
         this.id = id;

@@ -1,12 +1,13 @@
 package src.main.java.tech.reliab.course.bendichsm.bank.entity;
 
 
-public class PaymentAccount{
+public class PaymentAccount {
     private Integer id;
     private User user;
     private String bankName;
     private Integer money;
-    public PaymentAccount(User user, Integer id, String bankName, Integer money){
+
+    public PaymentAccount(User user, Integer id, String bankName, Integer money) {
         this.id = id;
         this.money = money;
         this.bankName = bankName;
@@ -43,14 +44,6 @@ public class PaymentAccount{
 
     public User getUser() {
         return user;
-    }
-
-
-    public void update(PaymentAccount paymentAccount){
-        setMoney(paymentAccount.getMoney());
-        setId(paymentAccount.getId());
-        setUser(paymentAccount.getUser());
-        setBankName(paymentAccount.getBankName());
     }
 
 

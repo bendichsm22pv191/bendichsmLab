@@ -132,20 +132,6 @@ public class User extends Person {
         return super.getSurname();
     }
 
-    public void update(User user){
-        setBanks(user.getBanks());
-        setName(user.getName());
-        setId(user.getInterestRate());
-        setBirthday(user.getBirthday());
-        setSurname(user.getSurname());
-        setPatronymic(user.getPatronymic());
-        setCreditAccounts(user.getCreditAccounts());
-        setPaymentAccounts(user.getPaymentAccounts());
-        setPost(user.getPost());
-        setSalary(user.getSalary());
-        setInterestRate(user.getInterestRate());
-    }
-
     @Override
     public String toString() {
         return "User{" +

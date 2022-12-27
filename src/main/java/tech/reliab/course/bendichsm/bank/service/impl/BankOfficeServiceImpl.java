@@ -36,4 +36,25 @@ public class BankOfficeServiceImpl implements BankOfficeService {
         }
         return null;
     }
+    @Override
+    public void update(BankOffice bankOfficeUse, BankOffice bankOfficeAppdate){
+        bankOfficeAppdate.setId(bankOfficeUse.getId());
+        bankOfficeAppdate.setAddress(bankOfficeUse.getAddress());
+        bankOfficeAppdate.setAllOfficeMoney(bankOfficeUse.getAllOfficeMoney());
+        bankOfficeAppdate.setName(bankOfficeUse.getName());
+        bankOfficeAppdate.setAtmPutAble(bankOfficeUse.getAtmPutAble());
+        bankOfficeAppdate.setCreditAble(bankOfficeUse.getCreditAble());
+        bankOfficeAppdate.setMoneyGetAble(bankOfficeUse.getMoneyGetAble());
+        bankOfficeAppdate.setMoneyPutAble(bankOfficeUse.getMoneyPutAble());
+        bankOfficeAppdate.setQuantityATM(bankOfficeUse.getQuantityATM());
+        bankOfficeAppdate.setRentalPrice(bankOfficeUse.getRentalPrice());
+        bankOfficeAppdate.setStatus(bankOfficeUse.getStatus());
+
+    }
+
+    @Override
+    public void delite(BankOffice bankOffice){
+        bankOffice = null;
+    }
+
 }

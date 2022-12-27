@@ -1,6 +1,7 @@
 package src.main.java.tech.reliab.course.bendichsm.bank.service.impl;
 
 import src.main.java.tech.reliab.course.bendichsm.bank.entity.Bank;
+import src.main.java.tech.reliab.course.bendichsm.bank.entity.BankOffice;
 import src.main.java.tech.reliab.course.bendichsm.bank.entity.Employee;
 import src.main.java.tech.reliab.course.bendichsm.bank.service.BankService;
 
@@ -43,5 +44,21 @@ public class BankServiceImpl implements BankService {
             return true;
         }
         return false;
+    }
+    @Override
+    public void update(Bank bankUse, Bank bankAppdate){
+        bankAppdate.setAllMoney(bankUse.getAllMoney());
+        bankAppdate.setCountATM(bankUse.getCountATM());
+        bankAppdate.setCountClients(bankUse.getCountClients());
+        bankAppdate.setCountEmployee(bankUse.getCountEmployee());
+        bankAppdate.setRateBank(bankUse.getRateBank());
+        bankAppdate.setCountOffices(bankUse.getCountOffices());
+        bankAppdate.setName(bankUse.getName());
+        bankAppdate.setRentalPrice(bankUse.getRentalPrice());
+        bankAppdate.setId(bankUse.getId());
+    }
+    @Override
+    public void delite(Bank bank){
+        bank = null;
     }
 }

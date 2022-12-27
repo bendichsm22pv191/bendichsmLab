@@ -30,20 +30,6 @@ public class BankOffice{
         this.allOfficeMoney = allOfficeMoney;
         this.rentalPrice = rentalPrice;
     }
-    public void update(BankOffice bankOffice){
-        setId(bankOffice.getId());
-        setAddress(bankOffice.getAddress());
-        setAllOfficeMoney(bankOffice.getAllOfficeMoney());
-        setName(bankOffice.getName());
-        setAtmPutAble(bankOffice.getAtmPutAble());
-        setCreditAble(bankOffice.getCreditAble());
-        setMoneyGetAble(bankOffice.getMoneyGetAble());
-        setMoneyPutAble(bankOffice.getMoneyPutAble());
-        setQuantityATM(bankOffice.getQuantityATM());
-        setRentalPrice(bankOffice.getRentalPrice());
-        setStatus(bankOffice.getStatus());
-
-    }
 
     public void setMoneyGetAble(Boolean moneyGetAble) {
         isMoneyGetAble = moneyGetAble;

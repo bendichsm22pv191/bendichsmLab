@@ -5,4 +5,8 @@ import src.main.java.tech.reliab.course.bendichsm.bank.entity.Employee;
 
 public interface EmployeeService {
     void transferOffice(Employee employee, BankOffice bankOffice, Boolean offlineWork);
+
+    void update(Employee employeeUse, Employee employeeAppdate);
+
+    void delite(Employee employee);
 }
