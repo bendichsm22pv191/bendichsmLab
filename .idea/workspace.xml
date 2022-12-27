@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="200bad95-7b19-4a7e-a2f3-87f6f86d2f28" name="Changes" comment="part4 changes after verification">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/enums/BankAtmStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/enums/BankOfficeStatusEnum.java" afterDir="false" />
+    <list default="true" id="200bad95-7b19-4a7e-a2f3-87f6f86d2f28" name="Changes" comment="lab1 last">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/BankAtm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/BankAtm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/BankOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/BankOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/PaymentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/PaymentAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/AtmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/AtmService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/BankOfficeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/BankOfficeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/BankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/CreditAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/CreditAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/PaymentAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/PaymentAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/AtmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/AtmServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/BankOfficeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/BankOfficeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/BankServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/BankServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/CreditAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/CreditAccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/PaymentAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/PaymentAccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/utils/BankAtmStatusEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/reliab/course/bendichsm/bank/utils/BankOfficeStatusEnum.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +19,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2FLjzmYEkoQgbDuRaPzViI09O9n" />
   <component name="ProjectLevelVcsManager">
@@ -122,7 +107,7 @@
       <workItem from="1666954131052" duration="70000" />
       <workItem from="1669144149518" duration="594000" />
       <workItem from="1671457807687" duration="664000" />
-      <workItem from="1672165669292" duration="597000" />
+      <workItem from="1672165669292" duration="1741000" />
     </task>
     <task id="LOCAL-00001" summary="main plus">
       <created>1664278777070</created>
@@ -173,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665575871733</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lab1 last">
+      <created>1672166430140</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672166430140</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +189,7 @@
     <MESSAGE value="part2 preend" />
     <MESSAGE value="part3 comments plus lst chngs" />
     <MESSAGE value="part4 changes after verification" />
-    <option name="LAST_COMMIT_MESSAGE" value="part4 changes after verification" />
+    <MESSAGE value="lab1 last" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab1 last" />
   </component>
 </project>
